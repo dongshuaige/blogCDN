@@ -10682,6 +10682,7 @@ function savecontent() {
     for (var n in atemoji_array_tb)
         for (r = "[" + n + "]", i = "<img class='atemoji gallery-group-img' src='" + atemoji_array_tb[n] + "'/>"; - 1 != t.indexOf(r);) t = t.replace(r, i);
     var o = document.getElementById("touxiang").value;
+    console.log("o="+o);
     "" != o && (e = o);
     // "" !=o ? e=o : e="http://qiniu.hgdong.top/blog/20200616/6NnGIFGWgzRW.jpg";
     var a = (new showdown.Converter).makeHtml(t),
